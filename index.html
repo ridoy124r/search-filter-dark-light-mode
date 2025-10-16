@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Cards | Theme Toggle + Search</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="dark-mode">
+
+    <div class="flex flex-col gap-10 items-center py-10">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="theme-btn">
+            🌙 Dark Mode
+        </button>
+
+
+
+        <!-- Search Input -->
+        <input class="px-5 py-4 rounded-lg outline-none bg-[#111] text-[#aaa] w-[300px] mb-10 text-center" type="text"
+            placeholder="Search user..." />
+
+        <!-- Card Container -->
+        <div class="card-container flex flex-wrap justify-center gap-10 w-full max-w-[1000px]">
+            <!-- Dynamic cards appear here -->
+        </div>
+
+
+        <!-- JS Script -->
+        <script type="module" src="app.js"></script>
+</body>
+
+</html>
